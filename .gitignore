@@ -1,0 +1,21 @@
+# Dataset
+dataset/
+
+# Model checkpoints
+models/*.pth
+models/*.pt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+venv/
+.env/
+
+# OS files
+.DS_Store
+Thumbs.db
