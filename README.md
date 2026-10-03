@@ -6,6 +6,7 @@ The experiment compares three training approaches:
 1. Feature Extraction
 2. Partial Fine-Tuning
 3. Training from Scratch
+
 The project was developed as part of the Computer Vision and Deep Learning coursework.
 
 ## Objectives
@@ -18,6 +19,7 @@ The project was developed as part of the Computer Vision and Deep Learning cours
 The dataset contains two classes:
 * Fork
 * Spoon
+
 The dataset was divided into training and validation sets using an 80:20 split.
 
 | Dataset    | Number of Images |
@@ -65,6 +67,8 @@ The experimental results show different performance across the three training ap
 * **Feature Extraction** achieved 95.77% validation accuracy, correctly classifying 68 out of 71 images. This indicates that the pretrained feature representations were effective for distinguishing between fork and spoon images, even without updating the feature extractor.
 * **Partial Fine-Tuning** achieved 100% validation accuracy, correctly classifying all 71 validation images. This result indicates that adapting selected pretrained layers helped the model learn features relevant to the target classification task.
 * **Training from Scratch** achieved 56.34% validation accuracy. The model predicted all validation images as fork, correctly classifying the 40 fork images but failing to recognize the 31 spoon images. This suggests that the model did not learn sufficient discriminative features for both classes under the current training configuration.
+
+**Note:** The validation dataset contains only 71 images. Therefore, the results represent performance on this particular validation split and should not be interpreted as a guarantee of performance on unseen real-world images.
 
 ## Conclusion
 Based on the experiments, MobileNetV3-Large was evaluated using Feature Extraction, Partial Fine-Tuning, and Training from Scratch for fork and spoon image classification. Feature Extraction achieved 95.77% validation accuracy, Partial Fine-Tuning achieved 100%, and Training from Scratch achieved 56.34%. The results demonstrate that pretrained weights provided useful feature representations for this classification task. Partial Fine-Tuning also showed that adapting selected layers could improve the model's performance on the validation set.
