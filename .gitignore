@@ -1,12 +1,10 @@
-# Dataset
-dataset/
-
 # Model checkpoints
 models/*.pth
 models/*.pt
 
 # Python cache
 __pycache__/
+*.py[cod]
 *.pyc
 
 # Jupyter checkpoints
@@ -14,7 +12,8 @@ __pycache__/
 
 # Virtual environment
 venv/
-.env/
+.venv/
+env/
 
 # OS files
 .DS_Store
