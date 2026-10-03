@@ -19,6 +19,7 @@ The dataset contains two classes:
 * Fork
 * Spoon
 The dataset was divided into training and validation sets using an 80:20 split.
+
 | Dataset    | Number of Images |
 | ---------- | ---------------: |
 | Training   |              279 |
