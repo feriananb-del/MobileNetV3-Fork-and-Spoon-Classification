@@ -46,14 +46,14 @@ The dataset archive is provided in the `dataset/` directory.
 * Random seed: 42
 
 ### Experiment Configurations
-**1. Feature Extraction**
-The pretrained MobileNetV3-Large feature extractor is frozen, while the classification layer is trained for the target classes.
+**1. Feature Extraction,**
+the pretrained MobileNetV3-Large feature extractor is frozen, while the classification layer is trained for the target classes.
 
-**2. Partial Fine-Tuning**
-Selected layers of the pretrained model are unfrozen and trained to adapt the model to the fork and spoon dataset.
+**2. Partial Fine-Tuning,**
+selected layers of the pretrained model are unfrozen and trained to adapt the model to the fork and spoon dataset.
 
-**3. Training from Scratch**
-The model is trained without pretrained weights to observe performance when learning from the dataset alone.
+**3. Training from Scratch,**
+the model is trained without pretrained weights to observe performance when learning from the dataset alone.
 
 ## Experimental Results
 | Training Method       | Validation Accuracy |
